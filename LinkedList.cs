@@ -41,11 +41,11 @@ public class LinkedList
 
         while (current != null)
         {
-            result.Add($" -> {current.GetValue()}");
+            result.Add(current.GetValue().ToString());
             current = current.Next;
         }
 
-        return result.ToString();
+        return string.Join(" -> ", result);
     }
 
 
@@ -60,6 +60,31 @@ public class LinkedList
             current = current.Next;
         }
         return count;
+    }
+    // Method to remove the first value
+    public void RemoveValue(int data)
+    {
+        if (Head == null)
+        {
+            return;
+        }
+        if (Head.GetValue() == data)
+        {
+            Head = Head.Next;
+            return;
+        }
+
+        Node current = Head;
+
+        while (current.Next != null)
+        {
+            if (current.Next.GetValue() == data)
+            {
+                current.Next = current.Next.Next;
+                return;
+            }
+            current = current.Next;
+        }
     }
 
     // O(n)
