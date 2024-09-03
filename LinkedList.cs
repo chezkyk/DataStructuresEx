@@ -78,7 +78,7 @@ public class LinkedList
             }
         }
     }
-
+    //O(n)
     public void RemoveIndex(int index)
     {
         if (index < 0 || Head == null)
@@ -107,6 +107,7 @@ public class LinkedList
 
         current.Next = current.Next.Next;
     }
+    //O(n)
     public int Find(int data)
     {
         int index = 0;
@@ -122,7 +123,7 @@ public class LinkedList
         }
         return -1;
     }
-
+    //O(n)
     public int Get(int index)
     {
         if (index < 0)
