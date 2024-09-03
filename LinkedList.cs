@@ -1,4 +1,5 @@
 ﻿using DataStructuresEx;
+using System.Text;
 
 public class LinkedList
 {
@@ -33,16 +34,20 @@ public class LinkedList
     }
 
     // O(n)
-    public void Display()
+    public string Display()
     {
         Node current = Head;
+        List<string> result = new List<string>();
+
         while (current != null)
         {
-            Console.Write($" -> {current.GetValue()}");
+            result.Add($" -> {current.GetValue()}");
             current = current.Next;
         }
-        Console.WriteLine();
+
+        return result.ToString();
     }
+
 
     // O(n)
     public int Length()
