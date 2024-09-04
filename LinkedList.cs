@@ -61,7 +61,7 @@ public class LinkedList
         }
         return count;
     }
-    // Method to remove the first value
+    // O(1)
     public void RemoveValue(int data)
     {
         if (Head == null)
