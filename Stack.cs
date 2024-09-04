@@ -36,6 +36,7 @@ namespace DataStructuresEx
                 return;
             }
             Top = Top.Next;
+            count--;
         }
         public int Peak()
         {

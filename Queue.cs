@@ -41,6 +41,7 @@ namespace DataStructuresEx
                 return;
             }
             Head = Head.Next;
+            count--;
         }
         public int Peek()
         {
