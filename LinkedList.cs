@@ -14,7 +14,7 @@ public class LinkedList
         Head = new Node(data);
     }
 
-    // O(n)
+    // O(1)
     public void Add(int val)
     {
         Node newNode = new Node(val);
