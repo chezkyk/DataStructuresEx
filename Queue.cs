@@ -36,7 +36,7 @@ namespace DataStructuresEx
         }
         public void Dequeue()
         {
-            if (Head == null)
+            if (IsEmpty())
             {
                 return;
             }
@@ -44,7 +44,7 @@ namespace DataStructuresEx
         }
         public int Peek()
         {
-            if (Head == null)
+            if (IsEmpty())
             {
                 return -1;
             }
@@ -52,8 +52,15 @@ namespace DataStructuresEx
         }
         public int Count()
         {
-
+            if (IsEmpty())
+            {
+                return - 1;
+            }
             return count;
+        }
+        public bool IsEmpty()
+        { 
+            return Head == null; 
         }
 
     }
