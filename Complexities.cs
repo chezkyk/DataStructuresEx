@@ -118,9 +118,9 @@ namespace DataStructuresEx
         }
 
         // ex 7
-        public static int[] MergeSortedArraysUnique(int[] array1, int[] array2)
-        {
+        //public static int[] MergeSortedArraysUnique(int[] array1, int[] array2)
+        //{
             
-        }
+        //}
     }
 }
