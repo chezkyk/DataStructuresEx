@@ -70,10 +70,10 @@ namespace DataStructuresEx
         }
 
         //ex 7
-        public static bool IsPalindrome(string str)
-        {
+        //public static bool IsPalindrome(string str)
+        //{
             
-        }
+        //}
     }
 }
 
