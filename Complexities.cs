@@ -9,11 +9,13 @@ namespace DataStructuresEx
     public class Complexities
     {
         //ex 1
+        // o(n)
         public static int CalculateOddSum(int[] array)
         {
+
             int sum = 0;
             for (int i = 0; i < array.Length; i++)
-            {
+            {       
                 if (array[i] % 2 != 0)
                 {
                     sum += array[i];
@@ -23,6 +25,7 @@ namespace DataStructuresEx
         }
 
         //ex 2
+        // O(n)
         public static int[] FindMaximumTwo(int[] array)
         {
             int[] towLargestInArray = new int[2];
@@ -44,6 +47,7 @@ namespace DataStructuresEx
         }
 
         // ex 3
+        // O(n)
         public static bool ContainsNumber(int[] array, int number)
         {
             for (int i = 0; i < array.Length; i++)
@@ -57,6 +61,7 @@ namespace DataStructuresEx
         }
 
         // ex 4
+        // O(n)
         public static int[] SumOfAllTriplets(int[] array)
         {
             int[] helpArr = new int[3];
@@ -83,6 +88,7 @@ namespace DataStructuresEx
         }
 
         // ex 5
+        // O(n)
         public static int[] FindLastClosePairWithProduct(int[] array, int product)
         {
             int[] productArr = new int[2];
@@ -104,6 +110,7 @@ namespace DataStructuresEx
         }
 
         // ex 6
+        // O(n)
         public static int CountEvenNumbers(int[] array)
         {
             int count = 0;
